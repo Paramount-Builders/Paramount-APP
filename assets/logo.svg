@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Background Circle -->
+  <circle cx="60" cy="60" r="56" fill="#1a365d"/>
+
+  <!-- Stylized "P" for Paramount -->
+  <path d="M40 85V35h20c11.046 0 20 8.954 20 20s-8.954 20-20 20H50"
+        stroke="#ed8936"
+        stroke-width="8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"/>
+
+  <!-- Building/Construction Element - Roof Peak -->
+  <path d="M60 25L80 45H40L60 25Z"
+        fill="#2b6cb0"/>
+
+  <!-- Accent Line -->
+  <line x1="35" y1="90" x2="85" y2="90"
+        stroke="#ed8936"
+        stroke-width="3"
+        stroke-linecap="round"/>
+
+  <!-- Inner accent dots -->
+  <circle cx="45" cy="52" r="3" fill="#ffffff" opacity="0.9"/>
+</svg>

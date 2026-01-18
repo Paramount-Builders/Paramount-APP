@@ -1,0 +1,222 @@
+/**
+ * CSS Custom Properties / Design Tokens
+ * Paramount Builders LLC - Restoration Bid App
+ *
+ * Premium design system with dark mode support.
+ * All colors, spacing, typography defined here for consistency.
+ *
+ * @version 1.0.0
+ */
+
+:root {
+  /* ============================================
+   * COLOR PALETTE - Light Mode
+   * Premium professional color scheme
+   * ============================================ */
+
+  /* Brand Colors - Paramount Builders LLC */
+  --color-brand-primary: #1a365d;      /* Deep navy blue - trust, professionalism */
+  --color-brand-secondary: #2b6cb0;    /* Medium blue - action, confidence */
+  --color-brand-accent: #ed8936;       /* Warm orange - energy, attention */
+  --color-brand-accent-hover: #dd6b20;
+
+  /* Neutral Colors */
+  --color-neutral-50: #f7fafc;
+  --color-neutral-100: #edf2f7;
+  --color-neutral-200: #e2e8f0;
+  --color-neutral-300: #cbd5e0;
+  --color-neutral-400: #a0aec0;
+  --color-neutral-500: #718096;
+  --color-neutral-600: #4a5568;
+  --color-neutral-700: #2d3748;
+  --color-neutral-800: #1a202c;
+  --color-neutral-900: #171923;
+
+  /* Semantic Colors */
+  --color-success: #38a169;
+  --color-success-light: #c6f6d5;
+  --color-warning: #d69e2e;
+  --color-warning-light: #fefcbf;
+  --color-error: #e53e3e;
+  --color-error-light: #fed7d7;
+  --color-info: #3182ce;
+  --color-info-light: #bee3f8;
+
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7fafc;
+  --bg-tertiary: #edf2f7;
+  --bg-card: #ffffff;
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+
+  /* Text Colors */
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-tertiary: #718096;
+  --text-inverse: #ffffff;
+  --text-link: #2b6cb0;
+  --text-link-hover: #1a365d;
+
+  /* Border Colors */
+  --border-light: #e2e8f0;
+  --border-medium: #cbd5e0;
+  --border-dark: #a0aec0;
+  --border-focus: #3182ce;
+
+  /* ============================================
+   * TYPOGRAPHY
+   * System font stack for performance
+   * ============================================ */
+
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+
+  /* Font Sizes - Mobile First */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+  /* Letter Spacing */
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+
+  /* ============================================
+   * SPACING SCALE
+   * Consistent spacing throughout app
+   * ============================================ */
+
+  --space-0: 0;
+  --space-1: 0.25rem;     /* 4px */
+  --space-2: 0.5rem;      /* 8px */
+  --space-3: 0.75rem;     /* 12px */
+  --space-4: 1rem;        /* 16px */
+  --space-5: 1.25rem;     /* 20px */
+  --space-6: 1.5rem;      /* 24px */
+  --space-8: 2rem;        /* 32px */
+  --space-10: 2.5rem;     /* 40px */
+  --space-12: 3rem;       /* 48px */
+  --space-16: 4rem;       /* 64px */
+  --space-20: 5rem;       /* 80px */
+
+  /* ============================================
+   * BORDERS & RADIUS
+   * ============================================ */
+
+  --radius-sm: 0.25rem;   /* 4px */
+  --radius-md: 0.5rem;    /* 8px */
+  --radius-lg: 0.75rem;   /* 12px */
+  --radius-xl: 1rem;      /* 16px */
+  --radius-2xl: 1.5rem;   /* 24px */
+  --radius-full: 9999px;
+
+  --border-width: 1px;
+  --border-width-2: 2px;
+
+  /* ============================================
+   * SHADOWS
+   * Subtle depth for cards and elevated elements
+   * ============================================ */
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+
+  /* ============================================
+   * TRANSITIONS
+   * Smooth, professional animations
+   * ============================================ */
+
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+  --transition-bounce: 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* ============================================
+   * Z-INDEX SCALE
+   * Layering system
+   * ============================================ */
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+  --z-tooltip: 700;
+
+  /* ============================================
+   * LAYOUT
+   * ============================================ */
+
+  --container-max: 1200px;
+  --container-padding: var(--space-4);
+  --header-height: 60px;
+  --footer-height: 80px;
+  --sidebar-width: 280px;
+}
+
+/* ============================================
+ * DARK MODE OVERRIDES
+ * Activated via class on html element
+ * ============================================ */
+
+[data-theme="dark"] {
+  /* Background Colors */
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-tertiary: #21262d;
+  --bg-card: #161b22;
+
+  /* Text Colors */
+  --text-primary: #f0f6fc;
+  --text-secondary: #8b949e;
+  --text-tertiary: #6e7681;
+  --text-link: #58a6ff;
+  --text-link-hover: #79c0ff;
+
+  /* Border Colors */
+  --border-light: #30363d;
+  --border-medium: #484f58;
+  --border-dark: #6e7681;
+
+  /* Brand adjustments for dark mode */
+  --color-brand-secondary: #58a6ff;
+  --color-brand-accent: #f0883e;
+
+  /* Shadows for dark mode - more subtle */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================
+ * RESPONSIVE BREAKPOINTS (via media queries)
+ * Mobile-first approach
+ * ============================================ */
+
+/* Usage in other files:
+   @media (min-width: 640px)  { } // sm
+   @media (min-width: 768px)  { } // md
+   @media (min-width: 1024px) { } // lg
+   @media (min-width: 1280px) { } // xl
+*/
